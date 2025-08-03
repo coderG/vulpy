@@ -15,7 +15,7 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv("${SONARQUBE_ENV}") {
-                    bat 'E:\sonar-scanner-cli-5.0.1.3006-windows\bin\sonar-scanner.bat'
+                    bat 'pwd'
                 }
             }
         }
