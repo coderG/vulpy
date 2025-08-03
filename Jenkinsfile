@@ -15,7 +15,7 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv("${SONARQUBE_ENV}") {
-                    bat 'cd'
+                    bat 'sonar-scanner.bat'
                 }
             }
         }
