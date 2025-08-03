@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        SONARQUBE_ENV = 'SonarScannerManual'  // must match configured server name in Jenkins
+        SONARQUBE_ENV = 'SonarQube' // Must match Jenkins SonarQube server name
     }
 
     stages {
